@@ -1,0 +1,13 @@
+name: blueBooby
+channels:
+  - conda-forge
+dependencies:
+    - python=3
+    - numpy
+    - scipy
+    - matplotlib
+    - setuptools
+    - jupyterlab
+    - gym
+    - pip:
+      - pytest
