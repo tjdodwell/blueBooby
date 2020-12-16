@@ -7,7 +7,7 @@ python:
   - 3.8
 
 install:
-  - pip install plotly
+  - pip install plotly pandas
   - python setup.py install
 
 before_script:
