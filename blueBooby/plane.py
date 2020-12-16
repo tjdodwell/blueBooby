@@ -106,8 +106,8 @@ class Plane:
 
             self.climb = True
 
-            self.z0 = self.z[-1]
-            self.z1 = z1
+            self.z0 = self.z[-1] # Start of climb at current altitude
+            self.z1 = z1 # Set new target altitude
 
             self.climb_start = self.x[-1]
             self.climb_x = climb_x

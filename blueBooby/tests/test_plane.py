@@ -16,4 +16,17 @@ def test_constructPlane():
 
     assert testPlane.commandCount == 0
 
-    assert True
+
+def test_initiateClimb():
+
+    # testing function initiate climb
+
+    testPlane = Plane(0.0, 0.0, 1.0, 0.0, [0.0, 0.0])
+
+    assert testPlane.climb == False
+
+    testPlane.initiateClimb(1000.0, 10.)
+
+    assert testPlane.climb == True
+    assert testPlane.z1 == 1000.0
+    assert testPlane.climb_x == 10.0
