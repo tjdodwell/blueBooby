@@ -1,15 +1,13 @@
 # blueBooby
-Reinforcement Learning for ATC
 
-
-# PETSc-GMsFEM
+Reinforcement Learning for Air Traffic Control
 
 ## Installation
 
 To install this project you must first clone the project
 
 ```
-git clone
+git clone https://github.com/tjdodwell/blueBooby.git
 cd blueBooby
 ```
 
