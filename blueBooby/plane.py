@@ -113,7 +113,7 @@ class Plane:
             self.climb_x = climb_x
 
             self.phi0 = self.phi[-1]
-            self.phi1 = 0.0 # Assumption for now.
+            self.phi1 = 0.0 # Assumption for now
 
             self.commandCount += 1
 
