@@ -10,7 +10,10 @@ install:
   - python setup.py install
 
 before_script:
-  - pip install pytest
+  - pip install pytest pytest-cov codecov
 
 script:
-  - pytest -v
+  - pytest -v --cov-config=.coveragerc
+
+after_success:
+  - codecov
