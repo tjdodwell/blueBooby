@@ -1,6 +1,6 @@
 # blueBooby
 
-Reinforcement Learning for Air Traffic Control
+Simple test cases for playing with reinforcement learning for Air Traffic Control (ATC)
 
 ## Installation
 
