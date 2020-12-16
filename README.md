@@ -1,6 +1,6 @@
 # blueBooby
 
-[![Build Status](https://travis-ci.com/alan-turing-institute/PeriPy.svg?branch=master)](https://travis-ci.com/alan-turing-institute/PeriPy)
+[![Build Status](https://travis-ci.com/tjdodwell/blueBooby.svg?branch=master)](https://travis-ci.com/tjdodwell/blueBooby.svg?)
 [![codecov](https://codecov.io/gh/alan-turing-institute/PeriPy/branch/master/graph/badge.svg)](https://codecov.io/gh/alan-turing-institute/PeriPy)
 
 Simple test cases for playing with reinforcement learning for Air Traffic Control (ATC)
