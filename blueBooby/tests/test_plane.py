@@ -4,9 +4,9 @@ from blueBooby import *
 
 def test_constructPlane():
 
-    testPlane = Plane(0.0, 0.0, 1.0, 0.0)
+    testPlane = Plane(0.0, 0.0, 1.0, 0.0, [0.0, 0.0])
 
-    testPlane =  Plane(0.0, 0.0, 1.0, 1.0, 0.0, 100.0, 1.0)
+    testPlane =  Plane(0.0, 0.0, 1.0, 1.0, [0.0, 0.0], 0.0, 100.0, 1.0)
 
     # Check first point has been added
     assert len(testPlane.t) == 1

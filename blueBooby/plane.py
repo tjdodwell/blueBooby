@@ -4,13 +4,15 @@ class Plane:
 
     # Base Class which defines a single aircraft's state and response to actions
 
-    def __init__(self, x0, z0, v0, phi0, t0 = 0.0, climb_x = 10e6, climb_z = 0.0):
+    def __init__(self, x0, z0, v0, phi0, waypoint, t0 = 0.0, climb_x = 10e6, climb_z = 0.0):
 
         # Position and Velocity
         self.x0 = x0
         self.z0 = z0
         self.v0 = v0
         self.phi0 = phi0
+
+        self.waypoint = waypoint
 
         # phi0 > 0 plane is climbing
         if(np.abs(self.phi0) > 0):
@@ -118,6 +120,7 @@ class Plane:
     def changeSpeed(self, v):
 
         self.v[-1] = v
+        self.commandCount += 1
 
     def setWayPoint(self, waypoint):
 
