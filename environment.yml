@@ -8,6 +8,8 @@ dependencies:
     - matplotlib
     - setuptools
     - jupyterlab
+    - pandas
     - gym
+    - dash
     - pip:
       - pytest
