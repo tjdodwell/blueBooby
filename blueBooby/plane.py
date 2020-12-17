@@ -154,3 +154,25 @@ class Plane:
     def setWayPoint(self, waypoint):
 
         self.waypoint = waypoint
+
+
+class FlightContainer:
+
+    def __init__(self, t0, position, velocity, climb_z = None, waypoints = []):
+
+        self.t0 = t0
+        self.position = position
+        self.velocity = velocity
+        self.climb_z = climb_z
+
+        self.all = []
+
+        self.id = -1
+
+    def reset(self)
+        self.id += 1
+        self.all.append(Plane((self, t0, position, velocity, waypoints)))
+        if np.abs(self.velocity[2]) > 0:
+            # Initiate Climb
+
+        self.simulator = self.all[-1]
