@@ -113,8 +113,6 @@ class Plane:
 
         # Initiate Climb - defined by a change of altitude + a distance over which it is done
 
-
-
             self.climb = True # Set climbing flag to True
 
             self.z0 = self.data['Alt'][-1] # Start of climb at current altitude
@@ -146,6 +144,12 @@ class Plane:
         self.data['vx'][-1] += dv[0]
 
         self.commandCount += 1
+
+        commanddata = {
+            'timestamp': len(self.data['time']) - 1,
+            'text': "Change Speed " + str(dv) + " nm",
+        }
+        self.data['command'].append(commanddata)
 
     def setWayPoint(self, waypoint):
 
